@@ -15,7 +15,6 @@ function getCurrentTime(){
 class App extends Component {
     
     constructor(props){
-        this.currentDate= new Date();
         super(props);
         this.state={
               time:getCurrentTime(),     
@@ -23,13 +22,13 @@ class App extends Component {
     }
     
    componentDidMount(){
-        this.intervalId = setInterval(()=>{
+        this.xyz = setInterval(()=>{
             this.setState({time:getCurrentTime()});
         },1000);
    } 
     
     componentWillUnmount(){
-        clearInterval(this.intervalId);
+        clearInterval(this.xyz);
     }
     
     render() {
