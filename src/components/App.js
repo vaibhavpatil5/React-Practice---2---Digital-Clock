@@ -3,11 +3,6 @@ import '../styles/App.css';
 
 function getCurrentTime(){
     const currentDate= new Date();
-//     const hours = currentDate.getHours();
-//     const mins = currentDate.getMinutes();
-//     const secs = currentDate.getSeconds();
-    
-//     return hours + ':' + mins + ':' + secs;
     return currentDate.toLocalTimeString().toUpperCase();
 }
 
